@@ -1,0 +1,15 @@
+.customStyles{
+    font-style: lato;
+    width:35rem;
+    height: 35rem;
+    padding: 20px;
+    margin: 30px;
+    
+
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
