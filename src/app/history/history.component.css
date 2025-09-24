@@ -1,0 +1,128 @@
+.history-scroll {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background: inherit;
+}
+.button-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.bottom-buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  justify-content: center;
+  margin-top:100px;
+}
+
+.card.customStyles {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.empty-history {
+  text-align: center;
+  color: #888;
+  margin: 24px 0 0 0;
+  font-size: 1.1rem;
+}
+
+.history-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+
+}
+
+.center-container {
+  .history-scroll {
+    max-height: 12rem;
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1rem;
+    border: 1rem;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card.customStyles {
+  font-family: Lato, sans-serif;
+  width: 35rem;
+  min-height: 20rem;
+  padding: 15px;
+  margin: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #bdbdbd;
+}
+
+.history-container ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.history-container li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.theme-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  opacity: 0.85;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.theme-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  opacity: 0.85;
+}

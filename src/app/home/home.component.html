@@ -1,0 +1,54 @@
+<div class="center-container">
+  <div class="card customStyles">
+    <h1 class="card-title text-center" style="margin-top: 20px;" >
+      {{ title }}
+    </h1>
+    <br />
+
+
+    <div class="display-container">
+      <input class="calc-display" [value]="display || '0'" readonly />
+    </div>
+
+    <div class="button-grid">
+      <button (click)="onButtonClick('(')">(</button>
+      <button (click)="onButtonClick(')')">)</button>
+      <button (click)="onButtonClick('%')">%</button>
+      <button (click)="clear()" class="btn-clear">C</button>
+
+      <button (click)="onButtonClick('7')">7</button>
+      <button (click)="onButtonClick('8')">8</button>
+      <button (click)="onButtonClick('9')">9</button>
+      <button (click)="onButtonClick('/')" class="btn-op">/</button>
+
+      <button (click)="onButtonClick('4')">4</button>
+      <button (click)="onButtonClick('5')">5</button>
+      <button (click)="onButtonClick('6')">6</button>
+      <button (click)="onButtonClick('*')" class="btn-op">*</button>
+
+      <button (click)="onButtonClick('1')">1</button>
+      <button (click)="onButtonClick('2')">2</button>
+      <button (click)="onButtonClick('3')">3</button>
+      <button (click)="onButtonClick('-')" class="btn-op">-</button>
+
+      <button (click)="onButtonClick('0')">0</button>
+      <button (click)="onButtonClick('.')">.</button>
+      <button (click)="deleteLast()" class="btn-del">&#x2715;</button>
+      <button (click)="onButtonClick('+')" class="btn-op">+</button>
+
+      <button class="btn-eq" (click)="evaluate()" style="grid-column: span 4;">=</button>
+    </div>
+
+    <div class="result-row">
+      <div>
+        <button class="theme-btn" (click)="toggleTheme()">
+          {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+        </button>
+        <button class="theme-btn" routerLink="/history">
+        History
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>

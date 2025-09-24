@@ -1,0 +1,17 @@
+<div class="center-container">
+  <div class="card customStyles">
+    <h2 class="card-title text-center">Calculation History</h2>
+    <div style="margin: 10px;">
+        <div class="history-scroll">
+      <ul>
+        <li *ngFor="let item of history">{{ item }}</li>
+      </ul>
+    </div>
+    </div>
+    <div *ngIf="history.length === 0" class="empty-history">No history to display.</div>
+    <div class="button-row bottom-buttons">
+      <button class="theme-btn" (click)="clearHistory()">Clear History</button>
+      <button class="theme-btn" routerLink="/">Back to Calculator</button>
+    </div>
+  </div>
+</div>
